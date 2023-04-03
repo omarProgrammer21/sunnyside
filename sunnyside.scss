@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+a:-webkit-any-link {
+    text-decoration: none;
+  }
+  
+$primary-color: hsl(0, 0%, 100%);
+$secondary-color: hsl(212, 27%, 19%);
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    // font-family: 'Fraunces', serif;
+    color: $primary-color;
+    // ;
+
+}
+header{
+    height: 100vh;
+    background: url('/img/desktop/image-header.jpg') no-repeat 50% 50% / cover;
+
+    h1{
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        letter-spacing: 6px;
+
+    }
+    .arrow{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+    }
+    
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .logo{
+            
+
+           padding: 20px;
+
+        }
+
+
+    
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 10px;
+            
+
+        }
+        li{
+            margin-right: 35px;
+            font-weight: lighter;
+
+        }
+        ul a{
+            color: $primary-color;
+            
+
+
+        }
+        button{
+            background: $primary-color;
+            border-radius: 30px;
+            border: none;
+            height: 40px;
+            width: 100px;
+            font-family: 'Fraunces', serif;
+
+        }
+    }
+
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-gap: 0; /* spacing between grid items */
+
+
+    
+    .first , .Fourth{
+        h1 , h4{
+            font-family: 'Fraunces', serif;
+        }
+        p{
+            color: hsl(210, 4%, 67%);
+
+        }
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 150px;
+    }
+    .sec , .Third , .fifth , .sixth{
+        height: 100vh;
+
+
+    }
+    .sec{
+        height: 100vh;
+
+    
+        background: url(/img/images/desktop/image-transform.jpg) no-repeat  ;
+        background-size: 100% 100%;
+
+    }
+    .Third{
+        height: 100vh;
+        background: url(/img/images/desktop/image-stand-out.jpg) no-repeat ;
+        background-size: 100% 100%;
+
+    }
+    .fifth{
+        background: url(/img/images/desktop/image-graphic-design.jpg) no-repeat ;
+        background-size: 100% 100%;
+
+        h2{
+            padding-top: 500px;     
+            font-family: 'Fraunces', serif ;
+
+            margin: 0;
+
+        }
+        p{
+            padding-right: 140px;
+            padding-left:140px ;
+        }
+
+        h2,p {
+        text-align: center;
+         color: hsl(167, 40%, 24%) ; 
+        }
+    }
+
+    .sixth{
+        background: url(/img/images/desktop/image-photography.jpg) no-repeat ;
+        background-size: 100% 100%;
+
+
+        h2{
+            padding-top: 500px;    
+            font-family: 'Fraunces', serif ;
+            margin: 0;
+             
+
+        }
+        p{
+            padding-right: 140px;
+            padding-left:140px ;
+        }
+
+        h2,p {
+        text-align: center;
+         color: hsl(198, 62%, 26%) ; 
+        }
+    }
+}
+.client{
+    color:hsl(210, 4%, 67%) ;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    padding: 40px;
+
+}
+
+.feedback{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    width: 100%;
+    
+    color:hsl(210, 4%, 67%) ;
+    h1{
+        text-align: center;
+    }
+    img{
+        border-radius: 50%;
+        height: 50px;
+    }
+    p{
+        padding: 40px;
+        color: hsl(213, 9%, 39%);
+    }
+    h3{
+        color: $secondary-color;
+        font-family: 'Fraunces', serif;
+    }
+}
+@media screen and (max-width: 981px){
+    .services , .feedback {
+ 
+    display: block;
+    }
+}
+   
+
+
+
+    
+
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  .photo-container img {
+    width: 50%; /* Display two images per row */
+    object-fit: cover;
+    margin-bottom: 0; /* Add some space between images */
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* If screen is wider than 768px, display four images per row */
+    .photo-container img {
+      width: 25%;
+      object-fit: cover;
+      margin: 0; /* Remove the bottom margin */
+    }
+  }
+  
+
+  footer{
+    background:hsl(168, 43%, 55%) ;
+    color: hsl(167, 40%, 24%);
+    h2{
+        text-align: center;
+        margin: 0;
+        padding: 20px 10px 10px 10px;
+    }
+    ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    a li{
+        padding: 30px;
+        color: hsl(167, 37%, 31%);
+
+    }
+    }
+    .social-media{
+        padding: 40px;
+        
+        a{
+            padding: 18px;
+            margin: 0;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:hsl(0, 0, 100%);
+    margin-bottom: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      background: hsl(0, 0, 100%);
+
+    }
+  
+    .hamburger {
+      display: block;
+      position: relative;
+
+    }
+    
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .navbar .logo {
+      order: 1;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  
+    .navbar .hamburger  {
+      order: 3;
+    }
+   
+  
+    .navbar .menu {
+      order: 2;
+      width: 100%;
+    }
+  
+    .menu.active {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .menu.active li {
+      margin: 0;
+      padding: 15px;
+    }
+  
+    .menu.active a {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: hsl(210, 4%, 67%);
+    }
+  
+    .menu.active a:hover {
+      color: #fff;
+    }
+  
+    .menu.active button {
+      background-color:hsl(51, 100%, 49%);
+      color: #333;
+    }
+  
+    .menu.active button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  
+    .hamburger.active span:first-child {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active span:last-child {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
+
+ 
+
