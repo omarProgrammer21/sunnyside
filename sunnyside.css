@@ -14,7 +14,7 @@ body {
 
 header {
   height: 100vh;
-  background: url("/img/desktop/image-header.jpg") no-repeat 50% 50%/cover;
+  background: url("img/desktop/image-header.jpg") no-repeat 50% 50%/cover;
 }
 header h1 {
   text-align: center;
@@ -80,16 +80,16 @@ header nav button {
 }
 .services .sec {
   height: 100vh;
-  background: url(/img/images/desktop/image-transform.jpg) no-repeat;
+  background: url(img/images/desktop/image-transform.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .services .Third {
   height: 100vh;
-  background: url(/img/images/desktop/image-stand-out.jpg) no-repeat;
+  background: url(img/images/desktop/image-stand-out.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .services .fifth {
-  background: url(/img/images/desktop/image-graphic-design.jpg) no-repeat;
+  background: url(img/images/desktop/image-graphic-design.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .services .fifth h2 {
@@ -106,7 +106,7 @@ header nav button {
   color: hsl(167, 40%, 24%);
 }
 .services .sixth {
-  background: url(/img/images/desktop/image-photography.jpg) no-repeat;
+  background: url(img/images/desktop/image-photography.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .services .sixth h2 {
